@@ -1,0 +1,8 @@
+@import "../../App.scss";
+
+footer {
+  @include flexCenterX;
+  background-color: rgb(9, 11, 19);
+}
+
+//sass --watch src/styles/footer/footer.scss src/styles/footer/footer.css

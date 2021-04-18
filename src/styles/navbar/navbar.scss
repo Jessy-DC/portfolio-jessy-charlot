@@ -1,3 +1,5 @@
+@import "src/App";
+
 $red: #C20023;
 $white: #f1f1f1;
 
@@ -5,33 +7,30 @@ $white: #f1f1f1;
   height: 60px;
   width: 100%;
   color: $white;
-  display: flex;
-  justify-content: center;
+  @include flexCenterX;
+  background-color: rgb(9, 11, 19);
   position: fixed;
   z-index: 100;
-  padding-top: 20px;
 }
 
 .navbar-items {
   font-size: 26px;
   height: 100%;
-  display: flex;
-  align-items: center;
+  @include flexCenterX;
 }
 
 .items {
-  margin: 0 50px;
+  margin: 0 30px;
   color: $white;
   font-family: 'Roboto', sans-serif;
   letter-spacing: 1px;
-  transition: border-bottom 1s ease-in-out;
+  transition: border-bottom 1s ease;
 }
 
 a {
   position: relative;
   text-decoration: none;
-  line-height: 50px;
-  display: block;
+  line-height: 45px;
   color: $white;
 }
 
@@ -44,7 +43,7 @@ a::after {
 }
 
 a:hover::after {
-  animation: hover 1s linear forwards;
+  animation: hover 0.5s linear forwards;
 }
 
 @keyframes hover {
@@ -64,3 +63,5 @@ a:hover::after {
     border-bottom-color: #fff;
   }
 }
+
+//sass --watch src/styles/navbar/navbar.scss src/styles/navbar/navbar.css

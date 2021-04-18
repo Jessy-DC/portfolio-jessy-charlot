@@ -4,9 +4,9 @@
   color: #f1f1f1;
   display: flex;
   justify-content: center;
+  background-color: #090b13;
   position: fixed;
   z-index: 100;
-  padding-top: 20px;
 }
 
 .navbar-items {
@@ -17,18 +17,17 @@
 }
 
 .items {
-  margin: 0 50px;
+  margin: 0 30px;
   color: #f1f1f1;
   font-family: "Roboto", sans-serif;
   letter-spacing: 1px;
-  transition: border-bottom 1s ease-in-out;
+  transition: border-bottom 1s ease;
 }
 
 a {
   position: relative;
   text-decoration: none;
-  line-height: 50px;
-  display: block;
+  line-height: 45px;
   color: #f1f1f1;
 }
 
@@ -41,7 +40,7 @@ a::after {
 }
 
 a:hover::after {
-  animation: hover 1s linear forwards;
+  animation: hover 0.5s linear forwards;
 }
 
 @keyframes hover {
