@@ -2,3 +2,7 @@
   display: flex;
   justify-content: center;
 }
+
+@mixin fontText {
+  font-family: "Namun Gotic", sans-serif;
+}
