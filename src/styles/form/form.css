@@ -1,0 +1,32 @@
+.form-contact {
+  text-align: center;
+  padding-top: 70px;
+  margin: 0 auto;
+  width: 50%;
+}
+.form-contact .form-content {
+  display: grid;
+  margin: 0 auto;
+  grid-template-rows: 100px 150px 30px;
+}
+.form-contact .form-content textarea {
+  height: auto;
+  width: 100%;
+  line-height: 50px;
+  display: block;
+}
+.form-contact .form-content .form-name, .form-contact .form-content .form-email {
+  width: 100%;
+}
+.form-contact .form-content .form-name input, .form-contact .form-content .form-email input {
+  width: 90%;
+}
+.form-contact .form-content .form-message {
+  grid-column: 1/span 3;
+}
+.form-contact .form-content .form-submit {
+  grid-row: 3;
+  grid-column: 1/span 3;
+}
+
+/*# sourceMappingURL=form.css.map */
