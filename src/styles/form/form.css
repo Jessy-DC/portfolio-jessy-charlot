@@ -3,30 +3,61 @@
   padding-top: 70px;
   margin: 0 auto;
   width: 50%;
+  position: relative;
 }
 .form-contact .form-content {
   display: grid;
-  margin: 0 auto;
-  grid-template-rows: 100px 150px 30px;
+  margin: 70px auto;
+  grid-template-rows: 50px 150px 30px;
+  grid-template-columns: 50% 50%;
 }
-.form-contact .form-content textarea {
+.form-contact .form-content .form-name, .form-contact .form-content .form-email {
+  width: 90%;
+}
+.form-contact .form-content .form-name label, .form-contact .form-content .form-email label {
+  display: block;
+  margin-right: 20px;
+  text-align: left;
+}
+.form-contact .form-content .form-name input, .form-contact .form-content .form-email input {
+  width: 100%;
+  border-radius: 5px;
+  line-height: 30px;
+}
+.form-contact .form-content .form-name {
+  justify-self: left;
+}
+.form-contact .form-content .form-email {
+  justify-self: right;
+}
+.form-contact .form-content .form-message {
+  position: relative;
+  margin-top: 20px;
+  grid-column: 1/span 3;
+}
+.form-contact .form-content .form-message label {
+  display: block;
+  text-align: left;
+}
+.form-contact .form-content .form-message textarea {
   height: auto;
   width: 100%;
   line-height: 50px;
   display: block;
-}
-.form-contact .form-content .form-name, .form-contact .form-content .form-email {
-  width: 100%;
-}
-.form-contact .form-content .form-name input, .form-contact .form-content .form-email input {
-  width: 90%;
-}
-.form-contact .form-content .form-message {
-  grid-column: 1/span 3;
+  border-radius: 5px;
 }
 .form-contact .form-content .form-submit {
   grid-row: 3;
   grid-column: 1/span 3;
+}
+.form-contact .form-content .form-submit button {
+  background-color: transparent;
+  color: #f1f1f1;
+  border-radius: 10px;
+  border-color: #f1f1f1;
+  width: 20%;
+  cursor: pointer;
+  margin-top: 10px;
 }
 
 /*# sourceMappingURL=form.css.map */

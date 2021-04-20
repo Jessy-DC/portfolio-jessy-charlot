@@ -3,34 +3,70 @@
   padding-top: 70px;
   margin: 0 auto;
   width: 50%;
+  position: relative;
 
   .form-content {
     display: grid;
-    margin: 0 auto;
-    grid-template-rows: 100px 150px 30px;
-
-    textarea {
-      height: auto;
-      width: 100%;
-      line-height: 50px;
-      display: block;
-    }
+    margin: 70px auto;
+    grid-template-rows: 50px 150px 30px;
+    grid-template-columns: 50% 50%;
 
     .form-name, .form-email {
-      width: 100%;
+      width: 90%;
+      label {
+        display: block;
+        margin-right: 20px;
+        text-align: left;
+      }
 
       input {
-        width: 90%;
+        width: 100%;
+        border-radius: 5px;
+        line-height: 30px;
       }
     }
 
+    .form-name {
+      justify-self: left;
+    }
+
+    .form-email {
+      justify-self: right;
+    }
+
     .form-message {
+      position: relative;
+      margin-top: 20px;
+
+      label {
+        display: block;
+        text-align: left;
+      }
+
+      textarea {
+        height: auto;
+        width: 100%;
+        line-height: 50px;
+        display: block;
+        border-radius: 5px;
+      }
+
       grid-column: 1 / span 3;
     }
 
     .form-submit {
       grid-row: 3;
       grid-column: 1 / span 3;
+
+      button {
+        background-color: transparent;
+        color: #f1f1f1;
+        border-radius: 10px;
+        border-color: #f1f1f1;
+        width: 20%;
+        cursor: pointer;
+        margin-top: 10px;
+      }
     }
   }
 }
