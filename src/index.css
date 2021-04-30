@@ -16,22 +16,34 @@ body {
   height: 60px;
   width: 100%;
   color: #f1f1f1;
-  background-color: #090b13;
   position: fixed;
+  background-color: #090b13;
   z-index: 100;
 }
 
 .navbar-items {
   font-size: 26px;
   height: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .items {
+  width: 100%;
+  align-self: center;
   margin: 0 30px;
-  color: #f1f1f1;
   font-family: "Namun Gotic", sans-serif;
   letter-spacing: 1px;
   transition: border-bottom 1s ease;
+}
+
+.items:nth-child(2) {
+  text-align: right;
+}
+
+.items:nth-child(3) {
+  text-align: right;
+  width: 30%;
 }
 
 a {
@@ -41,35 +53,6 @@ a {
   color: #f1f1f1;
 }
 
-a::after {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  border: 2px solid transparent;
-}
-
-a:hover::after {
-  animation: hover 0.5s linear forwards;
-}
-
-@keyframes hover {
-  0% {
-    width: 0;
-    height: 0;
-    border-bottom-color: transparent;
-  }
-  50% {
-    width: 0;
-    height: 100%;
-    border-bottom-color: #fff;
-  }
-  100% {
-    width: 100%;
-    height: 100%;
-    border-bottom-color: #fff;
-  }
-}
 .home {
   display: flex;
   flex-direction: column;
@@ -114,6 +97,68 @@ footer {
 .about .summary {
   letter-spacing: 2px;
   padding: 10px 20%;
+}
+
+.form-contact {
+  text-align: center;
+  padding-top: 70px;
+  margin: 0 auto;
+  width: 50%;
+  position: relative;
+}
+.form-contact .form-content {
+  display: grid;
+  margin: 70px auto;
+  grid-template-rows: 50px 150px 30px;
+  grid-template-columns: 50% 50%;
+}
+.form-contact .form-content .form-name, .form-contact .form-content .form-email {
+  width: 90%;
+}
+.form-contact .form-content .form-name label, .form-contact .form-content .form-email label {
+  display: block;
+  margin-right: 20px;
+  text-align: left;
+}
+.form-contact .form-content .form-name input, .form-contact .form-content .form-email input {
+  width: 100%;
+  border-radius: 5px;
+  line-height: 30px;
+}
+.form-contact .form-content .form-name {
+  justify-self: left;
+}
+.form-contact .form-content .form-email {
+  justify-self: right;
+}
+.form-contact .form-content .form-message {
+  position: relative;
+  margin-top: 20px;
+  grid-column: 1/span 3;
+}
+.form-contact .form-content .form-message label {
+  display: block;
+  text-align: left;
+}
+.form-contact .form-content .form-message textarea {
+  height: auto;
+  width: 100%;
+  line-height: 50px;
+  display: block;
+  border-radius: 5px;
+}
+.form-contact .form-content .form-submit {
+  grid-row: 3;
+  grid-column: 1/span 3;
+}
+.form-contact .form-content .form-submit button {
+  background-color: transparent;
+  color: #f1f1f1;
+  border-radius: 10px;
+  border-color: #f1f1f1;
+  width: 20%;
+  cursor: pointer;
+  margin-top: 10px;
 }
 
 /*# sourceMappingURL=index.css.map */

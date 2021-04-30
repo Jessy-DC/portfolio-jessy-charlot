@@ -18,7 +18,7 @@ export default function FormContact() {
                     <textarea id="message" className="textarea-message" />
                 </div>
                 <div className="form-submit">
-                    <button type="submit">Envoyer</button>
+                    <button className="is-rounded" type="submit">Envoyer</button>
                 </div>
             </form>
         </div>

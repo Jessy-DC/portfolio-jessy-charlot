@@ -2,23 +2,18 @@
   height: 60px;
   width: 100%;
   color: #f1f1f1;
-  display: flex;
-  justify-content: center;
-  background-color: #090b13;
   position: fixed;
   z-index: 100;
+  text-align: center;
 }
 
 .navbar-items {
   font-size: 26px;
   height: 100%;
-  display: flex;
-  align-items: center;
 }
 
 .items {
   margin: 0 30px;
-  color: #f1f1f1;
   font-family: "Namun Gotic", sans-serif;
   letter-spacing: 1px;
   transition: border-bottom 1s ease;
@@ -28,7 +23,6 @@ a {
   position: relative;
   text-decoration: none;
   line-height: 45px;
-  color: #f1f1f1;
 }
 
 a::after {
